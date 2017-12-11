@@ -1,0 +1,197 @@
+<?php
+
+    namespace Paginas;
+    
+    class EstadisticaEncuestaPage
+    {   
+        /**
+        * Usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * Perfil actual del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Lista Firebase de respuestas
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Respuestas;
+
+        /**
+        * Lista observable respuestas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $respuesta;
+        
+        /**
+        * Lista Firebase de encuesta
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Items;
+
+        /**
+        * Lista observable de encuestas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $items;
+
+        /**
+        * Lista array de respuestas
+        *
+        * @var Array[Object]
+        *
+        */
+        public $ListaRespuestas;
+
+        /**
+        * Codigo de encuesta
+        *
+        * @var string
+        *
+        */
+        public $codigo;
+
+        /**
+        * Bandera de estado
+        *
+        * @var bool
+        *
+        */
+        public $estado;
+
+        /**
+        * Bandera de opción multiple
+        *
+        * @var bool
+        *
+        */
+        public $check = false;
+
+        /**
+        * Bandera de para mostrar tabla
+        *
+        * @var bool
+        *
+        */
+        public $tabla;
+
+        /**
+        * Nombre de la encuesta
+        *
+        * @var string
+        *
+        */
+        public $Encuesta;
+
+        /**
+        * Tipo de la encuesta
+        *
+        * @var string
+        *
+        */
+        public $tipo;
+
+        /**
+        * Lista de las preguntas encuesta
+        *
+        * @var Array[string]
+        *
+        */
+        public $pieChartLabels;
+
+        /**
+        * Lista de cantidades de respuestas
+        *
+        * @var Array[int]
+        *
+        */
+        public $pieChartData;
+
+        /**
+        * Tipo de gráfico
+        *
+        * @var string
+        *
+        */
+        public $pieChartType;
+
+        /**
+        * Array  de colores para el grafico 
+        *
+        * @var Array[string]
+        *
+        */
+        public $pieChartColor;
+
+        /**
+        * Lista array de preguntas
+        *
+        * @var Array[string]
+        *
+        */
+        public $preguntas;
+
+        /**
+        * Lista array de respuestas
+        *
+        * @var Object[]
+        *
+        */
+        public $respuestas;
+
+        /**
+        * Carga los datos del usuario del localStorage y las encuestas del firebase 
+        *
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param ActionSheetController $actionSheetCtrl atributo para el actionsheet.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        *
+        * @apiSuccess void Carga las estadísticas de la encuesta seleccionada 
+        *
+        *
+        */
+        function constructor($navCtrl,$navParams,$actionSheetCtrl,$afDB) {
+        }
+
+        /**
+        * Carga los resultados a los gráficos torta con las cantidades sacadas del firebase
+        *
+        *
+        */
+        function ObtenerCantidades() {
+        }
+
+        /**
+        * Muestra el gráfico 
+        *
+        * @param string $pieChartType Formato del grafico
+        * @param Array[string] $pieChartLabels Lista de respuestas de la encuesta
+        * @param Array[string] $pieChartData Lista de respuestas del grafico
+        *
+        */
+        function mostrar($pieChartType,$pieChartLabels,$pieChartData) {
+            
+        }
+    }
+
+  
+  
+  

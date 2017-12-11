@@ -1,0 +1,285 @@
+<?php
+
+    namespace Paginas;
+
+    class ModificarEncuestaPage
+    {
+        /**
+        * Usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * Perfil actual del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Codigo de la encuesta
+        *
+        * @var string
+        *
+        */
+        public $codigo;
+
+        /**
+        * Bandera para formulario de preguntas
+        *
+        * @var bool
+        *
+        */
+        public $Agregar;
+
+        /**
+        * Materia de la encuesta
+        *
+        * @var string
+        *
+        */
+        public $materia;
+
+        /**
+        * Nombre de la encuesta
+        *
+        * @var string
+        *
+        */
+        public $nombre;
+        
+        /**
+        * Horas de la encuesta
+        *
+        * @var int
+        *
+        */
+        public $horas;
+
+        /**
+        * Bandera para modificar horas
+        *
+        * @var bool
+        *
+        */
+        public $cambio;
+
+        /**
+        * Listado array de preguntas
+        *
+        * @var Object[]
+        *
+        */
+        public $preguntas;
+
+        /**
+        * Formato de la pregunta
+        *
+        * @var string
+        *
+        */
+        public $formato;
+
+        /**
+        * Nombre de la pregunta
+        *
+        * @var string
+        *
+        */
+        public $question;
+
+        /**
+        * Valor de la respuestas
+        *
+        * @var int
+        *
+        */
+        public $respuesta;
+        
+        /**
+        * Cantidad de respuestas
+        *
+        * @var int
+        *
+        */
+        public $cantidad;
+
+        /**
+        * Array de respuestas
+        *
+        * @var Array[string]
+        *
+        */
+        public $option;
+        
+        /**
+        * Array de preguntas
+        *
+        * @var Array[string]
+        *
+        */
+        public $ListaPreguntas;
+
+        /**
+        * Lista Firebase de encuesta
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Encuestas;
+
+        /**
+        * Lista observable de encuestas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $encuestas;
+
+        /**
+        * Encuesta a modificar
+        *
+        * @var Object
+        *
+        */
+        public $encuesta;
+        
+        /**
+        * Lista Firebase de usuarios
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Profesores;
+        
+        /**
+        * Lista observable de usuarios
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $profesores;
+
+        /**
+        * Lista array de materias
+        *
+        * @var Array[Object]
+        *
+        */
+        public $Materias;
+
+        /**
+        * Lista Firebase de respuestas
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Respuestas;
+        
+        /**
+        * Lista observable de respuestas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $respuestas;
+
+        /**
+        * Lista array de respuestas auxiliar
+        *
+        * @var Array[Object]
+        *
+        */
+        public $respuestasAux;
+        
+        /**
+        *
+        * Carga los datos del usuario del localStorage y, las encuestas y respuestas del firebase y las materias del profesor seleccionado 
+	    *
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param ToastController $toastCtrl atributo para el toast
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        */
+        function __construct($navCtrl,$toastCtrl,$actionSheetCtrl,$navParams,$afDB)
+        {
+
+        }
+
+        /**
+        * Actualiza la encuesta 
+        *
+        * @param Object $encuesta encuesta seleccionada
+        * @param bool $cambio booleano que habilita la modificación de la duración de la encuesta
+        * @param int $horas nueva cantidad de horas de duración.
+        * @param Array[Object] $preguntas  array de preguntas.
+        * 
+        * @apiSuccess void Actualiza la encuesta en el firebase
+        * 
+        *
+        */
+        function ModificarQuestion($encuesta,$cambio,$horas,$preguntas) {
+        }
+
+        /**
+        * Agrega preguntas al array de preguntas de la encuesta
+        *
+        * @param string $question pregunta
+        * @param string $formato tipo de pregunta
+        * @param int $cantidad cantidad de respuestas.
+        * @param Array[String] $option  array de respuestas.
+        * 
+        * 
+        *
+        */
+        function completarPregunta($question,$formato,$cantidad,$option) {
+            
+        }
+
+        /**
+        *  Habilito el formulario de preguntas y ocultara la tabla de preguntas creadas
+        *
+        *
+        * @throws ErrorDatos Mostrara un toast informando que la encuesta ya fue respondida y no se podra agregar las preguntas
+        *
+        */
+        function HabilitarAgregarQuestion() {
+
+        }
+
+        /**
+        * Desabilita el formulario de preguntas y muestra la tabla de preguntas creadas
+        *
+        *
+        * @apiSuccess void Ocultara el formulario para crear preguntas y mostrara la tabla de preguntas creadas
+        *
+        *
+        */
+        function cancelar() {
+        }
+
+        /**
+        * @api Elimina pregunta
+        *
+        * @param string $Indice indice de la pregunta seleccionada
+        *
+        * @throws ErrorDatos Mostrara un toast informando que la encuesta ya fue respondida y no se podra eliminar las preguntas
+        *
+        *
+        */
+        function eliminarPregunta($Indice) {
+            
+        }
+    }
+
+
+  
+  
+  
+  
+  

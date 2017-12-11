@@ -1,0 +1,214 @@
+<?php
+
+    namespace Paginas;
+    
+    class RegistroProAdmPage
+    {   
+        /**
+        * Usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * Perfil actual del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Id del usuario
+        *
+        * @var int
+        *
+        */
+        public $id;
+
+        /**
+        * Email del usuario
+        *
+        * @var string
+        *
+        */
+        public $email;
+        
+        /**
+        * Contraseña del usuario
+        *
+        * @var string
+        *
+        */
+        public $password;
+
+        /**
+        * Repetición de contraseña del usuario
+        *
+        * @var string
+        *
+        */
+        public $confPassword;
+
+        /**
+        * Perfil del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfil;
+
+        /**
+        * Nombre del usuario
+        *
+        * @var string
+        *
+        */
+        public $nombre;
+
+        /**
+        * Apellido del usuario
+        *
+        * @var string
+        *
+        */
+        public $apellido;
+
+        /**
+        * Sexo del usuario
+        *
+        * @var string
+        *
+        */
+        public $sexo;
+
+        /**
+        * Bandera
+        *
+        * @var bool
+        *
+        */
+        public $noRegistro;
+
+        /**
+        * Bandera
+        *
+        * @var bool
+        *
+        */
+        public $siRegistro;
+
+
+        /**
+        * Lista Firebase de usuarios
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $personalList;
+
+        /**
+        * Lista observable de usuarios
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $personalObs;
+
+        /**
+        * Lista array de usuarios
+        *
+        * @var Array[Object]
+        *
+        */
+        public $personal;
+
+        /**
+        * Carga los datos del usuario del localStorage y del firebase
+        *
+        * @param ToastController $toastCtrl atributo para el toast
+        * @param AlertController $alertControler alertCtrl para el alertControler.
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        *
+        *
+        *
+        */
+        function __construct($toastCtrl,$alertControler,$navCtrl,$navParams,$actionSheetCtrl,$afDB)
+        {
+
+        }
+
+        /**
+        * Desabilita personal
+        *
+        * param Object $item usuario elegido
+        *
+        * @apiSuccess void Atributo habilitado del usuario modificado a false
+        *
+        *
+        */
+        function eliminarPersonal($item) {
+        }
+        
+        /**
+        * Habilita personal
+        *
+        * param Object $item usuario elegido
+        *
+        * @apiSuccess void Atributo habilitado del usuario modificado a true
+        *
+        *
+        */
+        function habilitarPersonal($item) {
+        }
+
+        /**
+        * Muestra formulario para registrar nuevo personal
+        *
+        *
+        *
+        */
+        function registrarPersonal() {
+        }
+
+        /**
+        * @api Quita el formulario de registro y vuelve a cargar la tabla
+        *
+        *
+        */
+        function cancelar() {
+        }
+
+        /**
+        * @api Agrega personal al sistema
+        * @apiVersion 0.1.0
+        * @apiGroup Registro-Pro-Adm
+        *
+        * @param string $perfil perfil del usuario
+        * @param string $nombre nombre del usuario 
+        * @param string $apellido apellido del usuario
+        * @param string $sexo sexo del usuario
+        * @param string $email email del usuario
+        * @param string $password contrasenia del usuario
+        * @param string $confPassword repetición de confirmación de la contraseña
+        *
+        * @throws ErrorData Complete todos los campos 
+        *
+        *
+        */
+        function completarRegistro($perfil,$nombre,$apellido,$sexo,$email,$password,$confPassword) {
+        }
+    }
+  
+
+
+  
+
+  
+
+  

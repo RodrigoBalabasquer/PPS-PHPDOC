@@ -1,0 +1,104 @@
+<?php
+
+    namespace Paginas;
+    
+    class GestorEncuestasPage
+    {   
+        /**
+        * usuario conectado
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * Perfil del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Nombre y apellido del usuario
+        *
+        * @var string
+        *
+        */
+        public $nombreComActual;
+
+        /**
+        * Lista Firebase de encuesta
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Encuestas;
+
+        /**
+        * Lista observable de encuesta
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $encuestas;
+
+        /**
+        * Lista array de encuesta
+        *
+        * @var Array[Object]
+        *
+        */
+        public $Cuestionarios;
+
+        /**
+        * Carga los datos del usuario del localStorage y las encuestas del firebase 
+        *
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        * @param AlertController $alertControler alertCtrl para el alertControler.
+        *
+        *
+        *
+        */
+        function __construct($navCtrl,$actionSheetCtrl,$afDB,$alertControler)
+        {
+
+        }
+
+        /**
+	    * Redirige a la página de alta de encuestas 
+        *
+        *
+	    */
+        function crearEncuesta() {
+        }
+
+        /**
+        * Elimina una encuesta  del Firebase
+        *
+        * @param Object $item Encuesta selecionada
+        *
+        */
+        function eliminarEncuesta($item) {
+        }
+
+        /**
+        * Permite modificar una encuesta 
+        *
+        * @param Object $item Encuesta selecionada
+        *
+        *
+        */
+        function modificarEncuesta($item) {
+        }
+  }
+
+
+   
+  
+  
+    
+  

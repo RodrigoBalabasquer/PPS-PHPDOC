@@ -1,0 +1,146 @@
+<?php
+
+    namespace Paginas;
+
+    class InformacionPage
+    {
+        /**
+        * usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * perfil del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Lista Firebase de aulas
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Aulas;
+
+        /**
+        * Lista observable de aulas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $aulas;
+
+        /**
+        * Lista Firebase de anuncios
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Anuncios;
+
+        /**
+        * Lista observable de anuncios
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $anuncios;
+
+        /**
+        * Lista array de anuncios
+        *
+        * @var Array[Object]
+        *
+        */
+        public $listaAnuncios;
+        
+        /**
+        * Aula seleccionada
+        *
+        * @var Object
+        *
+        */
+        public $Aula;
+
+        /**
+        * Lista array de alumnos de metodologia
+        *
+        * @var Array[Object]
+        *
+        */
+        public $alumnosMetod;
+
+        /**
+        * Lista array de alumnos de laboratorio IV
+        *
+        * @var Array[Object]
+        *
+        */
+        public $alumnosLabIV;
+
+        /**
+        * Lista array de alumnos de legislascion
+        *
+        * @var Array[Object]
+        *
+        */
+        public $alumnosLegis;
+
+        /**
+        * Codigo del aula
+        *
+        * @var string
+        *
+        */
+        public $codigo;
+
+        /**
+        *
+        * Carga los datos del usuario del localStorage y, las asistencia según el aula seleccionada y los anuncios 
+	    *
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        * @param PopoverController $popoverCtrl atributo para el popOver
+        */
+        function __construct($navCtrl,$navParams,$actionSheetCtrl,$afDB,$popoverCtrl)
+        {
+
+        }
+
+        /**
+        * @api {MostrarAnuncio()} - Muestra el anuncio con un popover
+        *
+        * @param Object $item anuncio seleccionado.
+        * @param Event $myEvent evento del popover.
+        *
+        *
+        *
+        */
+        function MostrarAnuncio($item, $myEvent) {
+
+        }
+
+        /**
+        *  Muestra las estadisticas de asistencias 
+        *
+        *
+        *
+        */
+        function functionEstadisticaAlumnos() {
+        }
+    }
+
+
+
+  
+  
+
+  

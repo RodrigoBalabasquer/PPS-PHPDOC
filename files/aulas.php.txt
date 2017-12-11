@@ -1,0 +1,79 @@
+<?php
+
+    namespace Paginas;
+    
+    class AulasPage
+    {   
+        /**
+        * Usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * Perfil actual del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Lista Firebase de aulas
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Aulas;
+
+        /**
+        * Lista observable de aulas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $aulas;
+
+        /**
+        * Lista array de aulas
+        *
+        * @var Array[Object]
+        *
+        */
+        public $ListaAulas;  
+
+        /**
+        * Carga los datos del usuario del localStorage y de las aulas del firebase
+        *
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        *
+        *
+        *
+        */
+        function __construct($navCtrl,$navParams,$actionSheetCtrl,$afDB)
+        {
+
+        }
+
+        /**
+        * Redirecciona a la pagina de información de aulas
+        * @param string $codigo codigo del aula.
+        *
+        *
+        *
+        */
+        function IrAula($codigo) {
+        }
+    }
+
+
+    
+        
+
+
+  

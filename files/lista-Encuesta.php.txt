@@ -1,0 +1,174 @@
+<?php
+
+    namespace Paginas;
+    
+    class ListaEncuestasPage
+    {
+        /**
+        * usuario conectado
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * Perfil del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Bandera de error
+        *
+        * @var bool
+        *
+        */
+        public $error;
+
+        /**
+        * Materia seleccionada
+        *
+        * @var string
+        *
+        */
+        public $materia;
+
+        /**
+        * Profesor seleccionado
+        *
+        * @var string
+        *
+        */
+        public $profesor;
+        
+        
+        public $Encuestas;
+
+        
+
+        /**
+        * Lista Firebase de encuesta
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Items;
+
+        /**
+        * Lista observable de encuesta
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $items;
+
+        /**
+        * Lista array de encuesta
+        *
+        * @var Array[Object]
+        *
+        */
+        public $Cuestionarios;
+
+        /**
+        * Lista Firebase de respuestas
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Results;
+
+        /**
+        * Lista observable de respuestas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $results;
+        
+        /**
+        * Lista array de resultados
+        *
+        * @var Array[Object]
+        *
+        */
+        public $ListaResultados;
+
+        /**
+        * Lista Firebase de usuarios
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Usuarios;
+
+        /**
+        * Lista observable de usuarios
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $usuarios;
+
+        /**
+        * Lista array de profesores
+        *
+        * @var Array[Object]
+        *
+        */
+        public $Profesores;
+
+        /**
+        * Lista array de materias
+        *
+        * @var Array[Object]
+        *
+        */
+        public $Materias;
+        
+        /**
+        * Carga los datos del usuario del localStorage y las encuestas,respuestas,materias del usuario y profesores del firebase 
+        *
+        * @param ToastController $toastCtrl atributo para el toast
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        * @param AlertController $alertControler alertCtrl para el alertControler.
+        *
+        *
+        *
+        */
+        function __construct($toastCtrl,$navCtrl,$navParams,$actionSheetCtrl,$afDB,$alertControler)
+        {
+
+        }
+
+        /** 
+        * Trae las encuestas disponibles que coincidan con los datos seleccionados y no que no haya acabado
+	    *
+        * @param string $materia Materia de la encuesta
+        * @param string $profesor Creador de la encuesta.
+        *
+	    * @throws ErrorDatos Ninguna encuesta fue encontrada. 
+        *
+        *
+        */
+        function traerEncuestas($materia,$profesor) {
+        }
+        /**
+        * Permite realizar el cuestionario rederigiendo a la página de encuesta con el codigo de la encuesta seleccionada
+        * @apiVersion 0.1.0
+        * @apiGroup Lista-Encuesta
+        *
+        * @param string $dato codigo de la encuesta
+        *
+        * @throws ErrorUser Mostrara un alert si la encuesta ya fue hecha por el usuario
+        *
+        */
+        function RealizarCuestionario($dato) {
+        }
+}

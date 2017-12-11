@@ -1,0 +1,158 @@
+<?php
+
+    namespace Paginas;
+
+    class RespuestasEncuestaPage
+    {
+        /**
+        * usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * nombre y apellido del usuario
+        *
+        * @var string
+        *
+        */
+        public $nombreComActual;
+
+        /**
+        * perfil del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * email del usuario
+        *
+        * @var string
+        *
+        */
+        public $emailActual;
+
+        /**
+        * sexo del usuario
+        *
+        * @var string
+        *
+        */
+        public $sexoActual;
+
+        /**
+        * nombre del usuario
+        *
+        * @var string
+        *
+        */
+        public $nombre;
+
+        /**
+        * Materia de la encuesta
+        *
+        * @var string
+        *
+        */
+        public $materia;
+
+        /**
+        * Lista Firebase de encuesta
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Encuestas;
+
+        /**
+        * Lista observable de encuestas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $encuestas;
+
+        /**
+        * Lista Firebase de usuarios
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Profesores;
+        
+        /**
+        * Lista observable de usuarios
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $profesores;
+
+        /**
+        * Lista array de materias
+        *
+        * @var Array[Object]
+        *
+        */
+        public $Materias;
+
+        /**
+        * Lista array de encuestas
+        *
+        * @var Array[Object]
+        *
+        */
+        public $Cuestionarios;
+
+        /**
+        * Lista array de encuestas auxiliar
+        *
+        * @var Array[Object]
+        *
+        */
+        public $cuestionarios;
+
+        /**
+        *
+        * Carga los datos del usuario del localStorage y, las encuestas del firebase y las materias del usuario 
+	    *
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        */
+        function __construct($navCtrl,$navParams,$actionSheetCtrl,$afDB)
+        {
+
+        }
+
+        /**
+        * Trae las encuestas del usuario y materia seleccionada. 
+        *
+        * @param string $materia materia de la encuesta.
+        *
+        *
+        *
+        */
+        function traerEncuestas($materia) {
+        }
+
+        /**
+        * Muestra las estadisticas de la encuesta seleccionada
+        *
+        * @param string $dato codigo de la encuesta.
+        *
+        *
+        *
+        */
+        function VerRespuesta($dato) {
+        }
+    }
+
+
+  
+  

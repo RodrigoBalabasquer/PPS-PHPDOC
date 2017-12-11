@@ -1,0 +1,113 @@
+<?php
+
+    namespace Paginas;
+    
+    class LoginPage
+    {   
+
+        /**
+        * Email del usuario
+        *
+        * @var string
+        *
+        */
+        public $email;
+
+        /**
+        * Contraseña del usuario
+        *
+        * @var string
+        *
+        */
+        public $password;
+
+        /**
+        * Lista Firebase de usuarios
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $usuariosList;
+
+        /**
+        * Lista observable de usuarios
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $usuariosObs;
+
+        /**
+        * Lista array de usuarios
+        *
+        * @var Array[Object]
+        *
+        */
+        public $usuarios;
+        
+        /**
+        * Muestra una selección de usuarios y completa los campos necesarios con dicho usuario para conectarse rápidamente para poder conectarse rápidamente
+        *
+        *
+        */
+        function inicioSesionRapido()
+        {
+
+        }
+
+        /**
+        * Inicia sesión con los datos ingresados en los campos de textos
+        *
+        * @param string $email  email del usuario.
+        * @param string $password  contraseña del usuario.
+        *
+        *
+        * @throws ErrorUser el usuario no esta habilitado en el sistema.
+        * @throws ErrorDatos campos ingresados incorrectos.
+        * @throws ErrorIncompleto debe ingresar todos los campos.
+        *
+        * 
+        */
+        function loginComun($email,$password)
+        {
+
+        }
+
+        /**
+        * Inicia sesión con la cuenta google
+        *
+        *
+        * @throws ErrorUser el usuario no esta habilitado en el sistema.
+        * @throws ErrorSistem hubo un error al iniciar sesión.
+        *
+        */	
+        function loginGoogle()
+        {
+
+        }
+
+         /**
+        * Carga la lista de usuario de firebase y sí el usuario ya había iniciado sesión, se carga automaticamente
+        *
+        */
+        function ionViewDidLoad() {   
+            
+        }
+
+        /**
+        * Verifica el token del usuario 
+        *
+        * @param Object $user  usuario.
+        * @param Object $token  token del usuario.
+        *
+        * @return bool true/false  True si el token ingresado coincide con el de la base de datos, caso contrario false
+        *
+        *
+        *
+        */
+        function verificarSiTieneToken($user,$token)
+        {
+            
+        }
+    }
+

@@ -1,0 +1,174 @@
+<?php
+
+    namespace Paginas;
+    
+    class MenuPage
+    {
+        /**
+        * usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * nombre y apellido del usuario
+        *
+        * @var string
+        *
+        */
+        public $nombreComActual;
+
+        /**
+        * perfil del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * email del usuario
+        *
+        * @var string
+        *
+        */
+        public $emailActual;
+
+        /**
+        * sexo del usuario
+        *
+        * @var string
+        *
+        */
+        public $sexoActual;
+
+        /**
+        * nombre del usuario
+        *
+        * @var string
+        *
+        */
+        public $nombre;
+            
+        /**
+        * Lista Firebase de qrs
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $QR;
+
+        /**
+        * Lista observable de qrs
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $qr;
+
+        /**
+        * Lista array de qrs
+        *
+        * @var Array[Object]
+        *
+        */
+        public $ListaQr;
+
+        /**
+        * Lista Firebase de avisos
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Avisos;
+
+        /**
+        * Lista observable de avisos
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $avisos;
+
+        /**
+        * Lista array de avisos
+        *
+        * @var Array[Object]
+        *
+        */
+        public $ListaAvisos;
+
+        /**
+        * Lista Firebase de encuestas
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Items;
+
+        /**
+        * Lista observable de encuestas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $items;
+
+        /**
+        * Carga los datos del usuario del localStorage y de los codigos QR de firebase
+        *
+        * @param NativeAudio $nativeAudio atributo para el nativeaudio.
+        * @param AlertController $alertCtrl alertCtrl para el alertControler.
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param BarcodeScanner $barcodeScanner  atributo para el scanner de QR.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        *
+        *
+        *
+        */
+        public function __construct($nativeAudio,$alertCtrl,$navCtrl,$navParams,$actionSheetCtrl,$barcodeScanner,$afDB)
+        {
+
+        }
+
+        /**
+        * Muestra el aviso de faltas si es que el usuario es alumno y llego a las 4 flatas
+        *
+        */
+        function MostrarAvisos()
+        {
+
+        }
+
+        /**
+        * Desconecta al usuario y limpia el localStorage
+        *
+        */
+        function logOut() {
+        }
+
+        /**
+        * Abre el menu ActionSheet con todos los enlaces disponibles para el usuario
+        *
+        */
+        function presentActionSheet() {
+        }
+
+        /**
+        * Habilita el scanner QR
+        *
+        *
+        * @throws ErrorCode el codigo no esta disponible en la base de datos.
+        * @throws ErrorUsuario No tiene permitido acceder.
+        *
+        */
+        function EscanearCodigo() 
+        {
+
+        }
+    }
+

@@ -1,0 +1,138 @@
+<?php
+
+    namespace Paginas;
+    
+    class EncuestaPage
+    {   
+        /**
+        * Usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+        
+        /**
+        * Lista Firebase de encuesta
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Items;
+
+        /**
+        * Lista observable de encuestas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $items;
+
+        /**
+        * Lista Firebase de respuestas
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Results;
+
+        /**
+        * Lista observable respuestas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $results;
+
+        /**
+        * Encuesta a crear
+        *
+        * @var Object
+        *
+        */
+        public $Cuestionario;
+
+        /**
+        * Lista array de encuestas
+        *
+        * @var Array[Object]
+        *
+        */
+        public $Cuestionarios;
+
+        /**
+        * Codigo de la encuesta
+        *
+        * @var string
+        *
+        */
+        public $codigo;
+
+        /**
+        * Bandera
+        *
+        * @var bool
+        *
+        */
+        public $display;
+
+        /**
+        * Lista array de respuestas
+        *
+        * @var  Array[string]
+        *
+        */
+        public $respuestas;
+
+        /**
+        * Lista array de preguntas
+        *
+        * @var  Array[string]
+        *
+        */
+        public $preguntas;
+
+        /**
+        * Carga los datos del usuario del localStorage y las encuestas del firebase 
+        *
+        * @param ToastController $toastCtrl atributo para el toast
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        * @param AlertController $alertControler alertCtrl para el alertControler.
+        *
+        *
+        *
+        */
+        function __construct($toastCtrl,$navCtrl,$navParams,$afDB,$alertControler)
+        {
+
+        }
+
+        /**
+        * Envia las respuestas al firebase
+        *
+        * @param Array[string] $respuestas lista de respuestas.
+        *
+        *
+        *
+        */
+        function enviar($respuestas)
+        {
+
+        }
+        /**
+        * Cancela la encuesta y redirige a la página de lista de encuestas
+        *
+        *
+        */
+        function cancelar()
+        {
+            
+        }
+    }
+
+
+  
+  
+

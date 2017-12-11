@@ -1,0 +1,183 @@
+<?php
+
+    namespace Paginas;
+    
+    class GestorAnunciosPage
+    {     
+        /**
+        * Usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * Perfil actual del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Nombre y apellido del usuario
+        *
+        * @var string
+        *
+        */
+        public $nombreComActual;
+
+        /**
+        * Bandera
+        *
+        * @var bool
+        *
+        */
+        public $crear;
+
+        /**
+        * Id del usuario
+        *
+        * @var int
+        *
+        */
+        public $id;
+
+        /**
+        * Titulo del usuario
+        *
+        * @var string
+        *
+        */
+        public $titulo;
+
+        /**
+        * Contenido del usuario
+        *
+        * @var string
+        *
+        */
+        public $contenido;
+
+        /**
+        * Aula del usuario
+        *
+        * @var string
+        *
+        */
+        public $opcionSeleccionada;
+
+        /**
+        * Lista Firebase de anuncios
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Anuncios;
+
+        /**
+        * Lista observable de anuncios
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $anuncios;
+
+        /**
+        * Lista array de anuncios
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $ListaDeAnuncios;
+
+        /**
+        * Lista array de anuncios auxiliar
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $ListaDeAnunciosAux;
+
+        /**
+        * Carga los datos del usuario del localStorage y de los anuncios del firebase
+	    *
+        * @param ToastController $toastCtrl atributo para el toast
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        *
+        *
+        *
+        */
+        function constructor($toastCtrl,$navCtrl,$navParams,$actionSheetCtrl,$afDB) {
+        }
+
+        /**
+        * Habilita el formulario de anuncios
+        *
+        *
+        *
+        */
+        function crearAnuncio() {
+        }
+
+        /**
+        * Desabilita el formulario de anuncios
+        *
+        *
+        */
+        function cancelar() {
+        }
+
+        /**
+        * Elimina anuncios
+        *
+        * @param Object $item anuncio seleccionado
+        *
+        *
+        *
+        */
+        function eliminarAnuncio($item) {
+        }
+
+        /**
+        * Habilita el formulario de anuncios y carga los datos
+        *
+        * @param Object $item anuncio seleccionado
+        *
+        *
+        *
+        */
+        function modificarAnuncio($item) {
+        }
+
+        /**
+        * @api Subira un nuevo anuncio, sí el id del anuncio es 0 crea un nuevo anuncio, caso contrario modifica el anuncio existente
+        * @apiVersion 0.1.0
+        * @apiGroup Gestor-Anuncio
+        *
+        * @param int $id  id del anuncio 
+        * @param string $titulo titulo anuncio 
+        * @param string $contenido descripción del anuncio 
+        * @param string $opcionSeleccionada aula a la que pertenece el anuncio 
+        *
+        *
+        */
+        function subirAnuncio($id,$titulo,$contenido,$opcionSeleccionada) {
+        }
+    }
+
+
+
+
+  
+
+  
+
+  
+
+  
+  

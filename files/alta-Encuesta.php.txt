@@ -1,0 +1,191 @@
+<?php
+
+    namespace Paginas;
+
+    class AltaEncuestaPage
+    {
+        /**
+        * Usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * Perfil actual del usuario
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Bandera
+        *
+        * @var bool
+        *
+        */
+        public $flag;
+
+        /**
+        * Formato de la pregunta
+        *
+        * @var string
+        *
+        */
+        public $formato;
+
+        /**
+        * Cantidad de respuestas
+        *
+        * @var int
+        *
+        */
+        public $cantidad;
+
+        /**
+        * Horas de la encuesta
+        *
+        * @var int
+        *
+        */
+        public $horas;
+
+        /**
+        * Nombre de la pregunta
+        *
+        * @var string
+        *
+        */
+        public $question;
+
+        /**
+        * Nombre de la encuesta
+        *
+        * @var string
+        *
+        */
+        public $nombre;
+        
+        /**
+        * Id de la encuesta
+        *
+        * @var string
+        *
+        */
+        public $id;
+
+        /**
+        * Array de respuestas
+        *
+        * @var Array[string]
+        *
+        */
+        public $option;
+        
+        /**
+        * Materia de la encuesta
+        *
+        * @var string
+        *
+        */
+        public $materia;
+
+        /**
+        * Lista Firebase de usuarios
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Profesores;
+        
+        /**
+        * Lista observable de usuarios
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $profesores;
+
+        /**
+        * Lista array de materias
+        *
+        * @var Array[Object]
+        *
+        */
+        public $Materias;
+
+        /**
+        * Lista Firebase de encuesta
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Encuestas;
+
+        /**
+        * Lista observable de encuestas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $encuestas;
+
+        /**
+        * Lista array de encuestas
+        *
+        * @var Array[Object]
+        *
+        */
+        public $ListaEncuesta;
+
+        /**
+        *
+        * Carga los datos del usuario del localStorage y, las encuestas del firebase y las materias del usuario 
+	    *
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param ToastController $toastCtrl atributo para el toast
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        */
+        function __construct($navCtrl,$toastCtrl,$actionSheetCtrl,$afDB)
+        {
+
+        }
+
+        /**
+        * Agrega preguntas a la encuesta 
+        *
+        * @param string $question nombre de la pregunta.
+        * @param string $formato formato de la pregunta.
+        * @param int $cantidad cantidad de respuestas.
+        * @param Array[string] $option  array de respuestas.
+        *
+        * @apiSuccess void Agrega pregunta al array de preguntas de la encuesta
+        *
+        *
+        */
+        function AgregarQuestion($question,$formato,$cantidad,$option) {
+        }
+
+        /**
+        * Sube la encuesta creada
+        *
+        * @param string $nombre nombre de la encuesta.
+        * @param int $horas horas de duración de la encuesta.
+        * @param string $materia  materia de encuesta.
+        * @param Array[Object] $encuesta listado de preguntas.
+        *
+        * @apiSuccess void Agrega la encuesta al firebase
+        *
+        *
+        */
+        function SubirQuestion($nombre,$horas,$materia,$encuesta) {
+        }
+    }
+
+
+  
+
+  

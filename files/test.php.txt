@@ -1,0 +1,10 @@
+<?php
+
+    namespace Paginas;
+    class test2
+    {
+        function __construct()
+        {
+            echo "test world";
+        }
+    }
