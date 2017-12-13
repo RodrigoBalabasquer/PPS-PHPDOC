@@ -1,0 +1,298 @@
+<?php
+
+    namespace Paginas;
+    
+    class RegistroAlumnoPage
+    { 
+        /**
+        * Usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * Perfil actual del alumno
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Id del alumno
+        *
+        * @var int
+        *
+        */
+        public $id;
+
+        /**
+        * Legajo del alumno
+        *
+        * @var int
+        *
+        */
+        public $legajo;
+
+        /**
+        * Lista de materias del alumno
+        *
+        * @var Array[Object]
+        *
+        */
+        public $materias;
+
+        /**
+        * Email del alumno
+        *
+        * @var string
+        *
+        */
+        public $email;
+        
+        /**
+        * Contraseña del alumno
+        *
+        * @var string
+        *
+        */
+        public $password;
+
+        /**
+        * Repetición de contraseña del alumno
+        *
+        * @var string
+        *
+        */
+        public $confPassword;
+
+        /**
+        * Perfil del alumno
+        *
+        * @var string
+        *
+        */
+        public $perfil;
+
+        /**
+        * Nombre del alumno
+        *
+        * @var string
+        *
+        */
+        public $nombre;
+
+        /**
+        * Apellido del alumno
+        *
+        * @var string
+        *
+        */
+        public $apellido;
+
+        /**
+        * Sexo del alumno
+        *
+        * @var string
+        *
+        */
+        public $sexo;
+
+        /**
+        * Bandera
+        *
+        * @var bool
+        *
+        */
+        public $noRegistro;
+
+        /**
+        * Bandera
+        *
+        * @var bool
+        *
+        */
+        public $siRegistro;
+
+        /**
+        * Bandera
+        *
+        * @var bool
+        *
+        */
+        public $sicsv;
+
+        /**
+        * Archivo importadfo
+        *
+        * @var Uploader
+        *
+        */
+        public $uploader;
+
+        /**
+        * Lista Firebase de usuarios
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $alumnosList;
+
+        /**
+        * Lista observable de usuarios
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $alumnosObs;
+
+        /**
+        * Lista array de usuarios
+        *
+        * @var Array[Object]
+        *
+        */
+        public $alumnos;
+
+        /**
+        * Carga los datos del usuario del localStorage y del firebase
+        *
+        * @param ToastController $toastCtrl atributo para el toast
+        * @param AlertController $alertControler alertCtrl para el alertControler.
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        *
+        *
+        *
+        */
+        function __construct($toastCtrl,$alertControler,$navCtrl,$navParams,$actionSheetCtrl,$afDB)
+        {
+
+        }
+
+        /**
+        * Desabilita alumno
+        *
+        * @param Object $item alumno elegido
+        *
+        *
+        *
+        */
+        function eliminarAlumno($item) {
+        }
+        
+        /**
+        * Habilita alumno
+        *
+        * @param Object $item alumno elegido
+        *
+        *
+        *
+        */
+        function habilitarAlumno($item) {
+        }
+        
+        /**
+        * Muestra formulario para registrar nuevos alumnos usando importación de archivos a traves de los parametros
+        *
+        * @param bool $noRegistro bandera que si esta en true oculta la tabla de usuarios
+        * @param bool $sicsv bandera que si esta en true oculta el boton de alta de de alumnos por importación de archivos
+        *
+        *
+        */
+        function   regCsv($noRegistro,$sicsv) {
+        }
+
+        /**
+        * Muestra formulario para registrar nuevo alumno a traves de los parametros
+        *
+        * @param bool $noRegistro bandera que si esta en true oculta la tabla de usuarios
+        * @param bool $siRegistro bandera que si esta en true oculta el formulario de alta de alumnos
+        *
+        *
+        */
+        function registrarAlumno($noRegistro,$siRegistro) {
+        }
+
+        /**
+        * Quita el formulario de registro y vuelve a cargar la tabla a traves de los parametros
+        *
+        * @param bool $noRegistro bandera que si esta en true oculta la tabla de usuarios
+        * @param bool $siRegistro bandera que si esta en true oculta el formulario de alta de usuarios
+        *
+        */
+        function cancelar($noRegistro,$siRegistro) {
+        }
+
+        /**
+        * Agrega personal al sistema
+        *
+        * @param Array[Object] $materias materias del alumno
+        * @param string $perfil perfil del alumno
+        * @param string $nombre nombre del alumno 
+        * @param string $apellido apellido del alumno
+        * @param string $sexo sexo del alumno
+        * @param string $email email del alumno
+        * @param string $password contrasenia del alumno
+        * @param string $confPassword repetición de confirmación de la contraseña
+        *
+        * @throws ErrorData Complete todos los campos 
+        *
+        *
+        */
+        function completarRegistro($materias,$perfil,$nombre,$apellido,$sexo,$email,$password,$confPassword) {
+        }
+
+        /**
+        * Separa el nombre y el apellido que recibe del archivo
+        *
+        * @param string $obj Nombre y apellido del usuario pasado por archivo
+        *
+        * @return Object  objeto con los campos nombre y apellido separados
+        *
+        *
+        */
+        function separarComas($obj) 
+        {
+
+        }
+
+        /**
+        * Agrega materia al usuario y carga sus datos al firebase (nombre,apellido,cantidad de faltas)
+        *
+        * @param {Object} $usuario usuario pasado por archivo
+        *
+        *
+        *
+        */
+        function agregarMaterias($usuario) {
+        }
+
+        /**
+        * Verifica que el alumno no se encuestre en el archivo
+        *
+        * @param Object $alumno alumno seleccionado
+        *
+        *
+        * @return bool Devuelve true si el usuario no se encontraba en el sistema y false si ya existía
+        *
+        *
+        *
+        */
+        function verificarSiExisteArchivo($alumno) {
+        }
+
+        /**
+        * Manda el archivo al servidor y carga a los alumnos que no esten en el sistema
+        *
+        * @param FileUploader $uploader archivo importado
+        *
+        * 
+        */
+        function mandarAlServidor($uploader) {
+        }
+}

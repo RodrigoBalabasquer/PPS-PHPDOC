@@ -146,9 +146,8 @@
         /**
         * Desabilita personal
         *
-        * param Object $item usuario elegido
+        * @param Object $item usuario elegido
         *
-        * @apiSuccess void Atributo habilitado del usuario modificado a false
         *
         *
         */
@@ -158,9 +157,8 @@
         /**
         * Habilita personal
         *
-        * param Object $item usuario elegido
+        * @param Object $item usuario elegido
         *
-        * @apiSuccess void Atributo habilitado del usuario modificado a true
         *
         *
         */
@@ -168,26 +166,28 @@
         }
 
         /**
-        * Muestra formulario para registrar nuevo personal
+        * Muestra formulario para registrar nuevo personal a traves de los parametros
         *
-        *
-        *
-        */
-        function registrarPersonal() {
-        }
-
-        /**
-        * @api Quita el formulario de registro y vuelve a cargar la tabla
+        * @param bool $noRegistro bandera que si esta en true oculta la tabla de usuarios
+        * @param bool $siRegistro usuario elegido bandera que si esta en true oculta el formulario de alta de usuarios
         *
         *
         */
-        function cancelar() {
+        function registrarPersonal($noRegistro,$siRegistro) {
         }
 
         /**
-        * @api Agrega personal al sistema
-        * @apiVersion 0.1.0
-        * @apiGroup Registro-Pro-Adm
+        * Quita el formulario de registro y vuelve a cargar la tabla a traves de los parametros
+        *
+        * @param bool $noRegistro bandera que si esta en true oculta la tabla de usuarios
+        * @param bool $siRegistro usuario elegido bandera que si esta en true oculta el formulario de alta de usuarios
+        *
+        */
+        function cancelar($noRegistro,$siRegistro) {
+        }
+
+        /**
+        * Agrega personal al sistema
         *
         * @param string $perfil perfil del usuario
         * @param string $nombre nombre del usuario 

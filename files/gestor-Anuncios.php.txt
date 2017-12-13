@@ -155,9 +155,7 @@
         }
 
         /**
-        * @api Subira un nuevo anuncio, sí el id del anuncio es 0 crea un nuevo anuncio, caso contrario modifica el anuncio existente
-        * @apiVersion 0.1.0
-        * @apiGroup Gestor-Anuncio
+        * Subira un nuevo anuncio, sí el id del anuncio es 0 crea un nuevo anuncio, caso contrario modifica el anuncio existente
         *
         * @param int $id  id del anuncio 
         * @param string $titulo titulo anuncio 

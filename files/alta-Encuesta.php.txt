@@ -162,7 +162,6 @@
         * @param int $cantidad cantidad de respuestas.
         * @param Array[string] $option  array de respuestas.
         *
-        * @apiSuccess void Agrega pregunta al array de preguntas de la encuesta
         *
         *
         */
@@ -177,7 +176,6 @@
         * @param string $materia  materia de encuesta.
         * @param Array[Object] $encuesta listado de preguntas.
         *
-        * @apiSuccess void Agrega la encuesta al firebase
         *
         *
         */

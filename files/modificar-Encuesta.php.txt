@@ -219,7 +219,6 @@
         * @param int $horas nueva cantidad de horas de duración.
         * @param Array[Object] $preguntas  array de preguntas.
         * 
-        * @apiSuccess void Actualiza la encuesta en el firebase
         * 
         *
         */
@@ -256,15 +255,12 @@
         * Desabilita el formulario de preguntas y muestra la tabla de preguntas creadas
         *
         *
-        * @apiSuccess void Ocultara el formulario para crear preguntas y mostrara la tabla de preguntas creadas
-        *
-        *
         */
         function cancelar() {
         }
 
         /**
-        * @api Elimina pregunta
+        * Elimina pregunta
         *
         * @param string $Indice indice de la pregunta seleccionada
         *

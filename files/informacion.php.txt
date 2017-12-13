@@ -116,7 +116,7 @@
         }
 
         /**
-        * @api {MostrarAnuncio()} - Muestra el anuncio con un popover
+        * Muestra el anuncio con un popover
         *
         * @param Object $item anuncio seleccionado.
         * @param Event $myEvent evento del popover.

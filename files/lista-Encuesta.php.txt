@@ -161,8 +161,6 @@
         }
         /**
         * Permite realizar el cuestionario rederigiendo a la página de encuesta con el codigo de la encuesta seleccionada
-        * @apiVersion 0.1.0
-        * @apiGroup Lista-Encuesta
         *
         * @param string $dato codigo de la encuesta
         *

@@ -1,0 +1,271 @@
+<?php
+
+    namespace Paginas;
+    
+    class ListaAsistenciaPage
+    {
+        /**
+        * Usuario
+        *
+        * @var Object
+        *
+        */
+        public $usuarioActual;
+
+        /**
+        * Perfil actual del alumno
+        *
+        * @var string
+        *
+        */
+        public $perfilActual;
+
+        /**
+        * Lista de alumnos de Metodología
+        *
+        * @var Array[Object]
+        *
+        */
+        public $alumnosMetodologia;
+
+        /**
+        * Lista de alumnos de Legislación
+        *
+        * @var Array[Object]
+        *
+        */
+        public $alumnosLegislacion;
+
+        /**
+        * Lista de alumnos de Laboratorio IV
+        *
+        * @var Array[Object]
+        *
+        */
+        public $alumnosLabIV;
+
+        /**
+        * Lista de asistencias del día de los alumnos de Metodología
+        *
+        * @var Array[Object]
+        *
+        */
+        public $listaDelDiaMetod;
+
+        /**
+        * Lista de asistencias del día de los alumnos de Legislación
+        *
+        * @var Array[Object]
+        *
+        */
+        public $listaDelDiaLegis;
+
+        /**
+        * Lista de asistencias del día de los alumnos de Laboratorio IV
+        *
+        * @var Array[Object]
+        *
+        */
+        public $listaDelDiaLabIV;
+
+        /**
+        * Fecha actual
+        *
+        * @var Date
+        *
+        */
+        public $fechaActual;
+        
+        /**
+        * Filtro para la lista de asistencia
+        *
+        * @var string
+        *
+        */
+        public $opFiltrado;
+        
+        /**
+        * Materia del aula
+        *
+        * @var string
+        *
+        */
+        public $materia;
+
+        /**
+        * Materia del aula del firebase
+        *
+        * @var string
+        *
+        */
+        public $materiaFirebase;
+
+        /**
+        * Aula seleccionada
+        *
+        * @var string
+        *
+        */
+        public $aula;
+
+        /**
+        * Profesor del aula
+        *
+        * @var string
+        *
+        */
+        public $profesor;
+
+        /**
+        * bandera para mostrar filtros del aula
+        *
+        * @var bool
+        *
+        */
+        public $filtradoHecho;
+
+        /**
+        * bandera para mostrar tabla de asistencia
+        *
+        * @var bool
+        *
+        */
+        public $tablaBusqueda;
+
+        /**
+        * bandera para habilitar toma de asistencia
+        *
+        * @var bool
+        *
+        */
+        public $tablaTomarAsistencia;
+
+        /**
+        * Lista de alumnos con faltas
+        *
+        * @var Array[Object]
+        *
+        */
+        public $arrayDeAlumnos;
+
+        /**
+        * Lista de alumnos con faltas auxiliar
+        *
+        * @var Array[Object]
+        *
+        */
+        public $arrayDeAlumnosAux;
+        
+        /**
+        * Lista Firebase de faltas
+        *
+        * @var AngularFireList[Object]
+        *
+        */
+        public $Faltas;
+
+        /**
+        * Lista observable de faltas
+        *
+        * @var Observable[Object]
+        *
+        */
+        public $faltas;
+
+        /**
+        * Lista array de faltas
+        *
+        * @var Array[Object]
+        *
+        */
+        public $arrayFaltasAux;
+
+
+        /**
+        *Carga los datos del usuario del localStorage y, las asistencia según el aula seleccionada y los anuncios de faltas que haya en el sistema
+        *
+        * @param Printer $printer atributo para exportación archivo pdf
+        * @param ToastController $toastCtrl atributo para el toast
+        * @param AlertController $alertCtrl atributo para el alert1
+        * @param AngularFireDatabase $afDB atributo para firebase.
+        * @param NavController $navCtrl atributo para el NavController.
+        * @param NavParams $navParams atributo para el NavParams.
+        * @param ActionSheetController $actionSheetCtrl  atributo para el actionsheet.
+        * @param File $file atributo para exportación archivo csv
+        *
+        *
+        *
+        */
+        function constructor($printer,$toastCtrl,$alertCtrl,$afDB,$navCtrl,$navParams,$actionSheetCtrl,$file) {
+        }
+
+
+  
+
+        /**
+        * Muestra el combo de filtro de asistencia asignandole la opcion seleccionada al atributo $opFiltrado
+        *
+        * @param string $opcion opcion de filtro
+        *
+        *
+        *
+        */
+        function filtrado($opcion) {
+        }
+
+        /**
+        * Muestra listado de asistencia
+        *
+        * @param string $opcionSeleccionada opcion de filtro por la que hace la búsqueda
+        * @param Object[] $alumnosMetodologia Lista de alumnos de metodologia
+        * @param Object[] $alumnosLegislacion Lista de alumnos de legislacion
+        * @param Object[] $alumnosLabIV Lista de alumnos de laboratorio IV
+        *
+        *
+        *
+        */
+        function buscarGeneral($opcionSeleccionada,$alumnosMetodologia,$alumnosLegislacion,$alumnosLabIV) {
+        }
+
+        /**
+        *  Habilitación la toma de asistencias
+        *
+        * @param bool $tablaTomarAsistencia si esta en true desabilita la toma de asistencia
+        * @param bool $tablaBusqueda si esta en true oculta la tabla de búsqueda
+        *
+        * @throws ErrorData Seleccione opción de filtrado
+        */
+        function tomarAsistencia($tablaTomarAsistencia,$tablaBusqueda) {
+        }
+
+        /**
+        * Pone presenetes a los alumnos seleccionados, si se vuelve a guardar en el mismo día modificara las asistencias
+        *
+        *
+        */
+        function guardarAsistencia() {
+        }
+
+        /**
+        * Descarga archivo excel a la ruta android/data/io.ionic.jujuro
+        *
+        *
+        * @param Date $fechaActual fecha actuañ
+        * @param Array[Object] $arrayDeAlumnos array de alumnos con sus cantidades de faltas
+        *
+        */
+        function exportarCSV($fechaActual,$arrayDeAlumnos) {
+        }
+
+        /**
+        * Descarga archivo pdf a ruta a eleccion
+        *
+        *
+        * @param Date $fechaActual fecha actuañ
+        * @param Array[Object] $arrayDeAlumnos array de alumnos con sus cantidades de faltas
+        *
+        */
+        function exportarPDF($fechaActual,$arrayDeAlumnos) {
+        }
+
+    }

@@ -164,7 +164,6 @@
         * @param ActionSheetController $actionSheetCtrl atributo para el actionsheet.
         * @param AngularFireDatabase $afDB atributo para firebase.
         *
-        * @apiSuccess void Carga las estadísticas de la encuesta seleccionada 
         *
         *
         */
